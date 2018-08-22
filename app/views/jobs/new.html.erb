@@ -2,23 +2,7 @@
   <h2>添加职位</h2>
 
   <hr>
-  <%= form_for @job do |f| %>
 
-  <% if @job.errors.any? %>
-  <ul>
-    <% @job.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>  
-  </ul>
-  <% end %>
+  <%= render "form" %>
 
-  职位名称
-  <%= f.text_field :title %>
-  <br>
-  职位描述
-  <%= f.text_area :description %>
-  <br>
-
-  <%= f.submit "提交", :disable_with => 'Submitting...' %>
-  <% end %>
 </div>
