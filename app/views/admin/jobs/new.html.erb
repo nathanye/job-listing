@@ -1,9 +1,8 @@
-<h1>添加职位</h1>
+<div class="col-md-4 col-md-offset-4">
+  <h2>添加职位</h2>
 
-<%= simple_form_for [:admin,@job] do |f| %>
+  <hr>
 
-<%= f.input :title %>
-<%= f.input :description %>
+  <%= render "form" %>
 
-<%= f.submit "Submit" %>
-<% end %>
+</div>
